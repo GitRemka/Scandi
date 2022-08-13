@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+body{
+    min-width: 1200px;
+    margin: 0 auto;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #533738;
+    overflow-wrap: break-word;
+    background-color: #EFE6E4;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+  }
