@@ -15,3 +15,100 @@
         url(../fonts/montserrat-500.woff2) format("woff2"),
         url(../fonts/montserrat-500.woff) format("woff");
   }
+
+  /** Общая стилизация текста**/
+.section__title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.descripton-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/** О нас**/
+
+.about-us__description p:first-child{
+    margin-bottom: 30px;
+}
+
+/** Ключевые особенности**/
+.key-features__container ul{
+    text-align: center;
+}
+
+.key-features__container ul>li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 269px;;
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.key-features__container ul>li:nth-child(1)::before{
+    content: "5";
+    display: block;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.key-features__container ul>li:nth-child(2)::before{
+    content: "100";
+    display: block;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.key-features__container ul>li:nth-child(3)::before{
+    content: "10";
+    display: block;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+/** Наши работы**/
+.our-works__room h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+
+.our-works__room p{
+    color: #FFFFFF;
+}
+
+.our-work-link{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+    text-decoration: none;
+}
+
+.our-work-link::after{
+    content: url("../images/decor/Arrow-right.svg");
+    margin-left: 10px;
+}
+
+/** Оставить заявку**/
+.contacts__title, .contacts__title+p{
+    color: #ffffff;
+}
+
+/** Оставить заявку**/
+.telephone, .telephone~span{
+    font: normal 400 18px/30px "Montserrat", "Arial", sans-serif;
+    text-decoration: none;
+    color: #533738;
+}
