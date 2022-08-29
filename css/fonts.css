@@ -37,14 +37,9 @@
 }
 
 /** Ключевые особенности**/
-.key-features__container ul{
-    text-align: center;
-}
-
-.key-features__container ul>li{
+.key-features__list>li{
     display: inline-block;
     text-align: center;
-    margin-right: 269px;;
     font-weight: 500;
     font-size: 30px;
     color: #ffffff;
@@ -52,7 +47,7 @@
     text-transform: uppercase;
 }
 
-.key-features__container ul>li:nth-child(1)::before{
+.key-features__list>li:nth-child(1)::before{
     content: "5";
     display: block;
     font-weight: 400;
@@ -60,7 +55,7 @@
     line-height: 62px;
 }
 
-.key-features__container ul>li:nth-child(2)::before{
+.key-features__list>li:nth-child(2)::before{
     content: "100";
     display: block;
     font-weight: 400;
@@ -68,7 +63,7 @@
     line-height: 62px;
 }
 
-.key-features__container ul>li:nth-child(3)::before{
+.key-features__list>li:nth-child(3)::before{
     content: "10";
     display: block;
     font-weight: 400;
@@ -99,6 +94,12 @@
 .our-work-link::after{
     content: url("../images/decor/Arrow-right.svg");
     margin-left: 10px;
+    transition: 0.3s;
+}
+
+.our-work-link:hover::after{
+    margin-left: 20px;
+    transition: 0.3s;
 }
 
 /** Оставить заявку**/

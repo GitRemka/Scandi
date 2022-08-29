@@ -1,10 +1,10 @@
 *{
     margin: 0;
 	padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
-    min-width: 1200px;
     margin: 0 auto;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
@@ -14,15 +14,34 @@ body{
     background-color: #EFE6E4;
 }
 
+img{
+    display: block;
+}
+
+a:focus{
+    border-radius: 2px;
+    outline: 2px solid #472f2f;
+}
+
+[class*="wrapper"]{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1036px;
+}
+
+[class*="full"]{
+    max-width: 1200px;
+}
+
 .visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
+    white-space: nowrap;
     clip-path: inset(100%);
-    margin: -1px;
-  }
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

@@ -1,82 +1,51 @@
 .page-header{
-    background-image: url("../../images/decor/headerImage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: absolute;
+  top:36px;
+  width: 100%;
 }
 
 .container-nav{
-    padding-top: 36px;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-wrapper{
-    margin-bottom:91px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page-header__logo{
-   text-transform: uppercase;
-   margin-right: 80px;
-   font-size: 16px;
-   line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 80px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .page-header__logo::before{
-    display: inline-block;
-    content: url("../../images/decor/logo.png");
-    vertical-align: middle;
+  display: inline-block;
+  content: url("../../images/decor/logo.png");
+  vertical-align: middle;
 }
 
-.main-menu{
-    display: inline;
+.nav-menu__list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.main-menu ul{
-    display: inline;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.container-nav a:hover{
+  opacity: 0.7;
 }
 
-.main-menu li{
-    display: inline-block;
-    margin-right: 26px;
+.nav-menu li:not(:last-child){
+  margin-right: 26px;
+  margin-bottom: 15px;
 }
 
-.page-header a, .main-menu a {
-    font-size: 16px;
-    line-height: 20px;
-    color: #533738;
-    text-decoration: none;
-  }
-
-  .info{
-    padding: 0 0 168px 90px;
-  }
-
-  .info h2{
-    max-width: 534px;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 62px;
-    margin-bottom: 24px;
-  }
-
-  .info p{
-    max-width: 493px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 21px;
-  }
-
-  .info a{
-    display: inline-block;
-    padding: 25px 68.5px;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #CC8B86;
+.page-header a, .nav-menu a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #533738;
+  text-decoration: none;
   }

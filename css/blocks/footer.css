@@ -1,0 +1,19 @@
+.page-footer{
+    padding: 37px 0;;
+}
+.page-footer__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-footer__wrapper .telephone{
+    margin-right: 42px;
+}
+
+.page-footer__wrapper span+span{
+    margin-left: auto;
+}
+
+.page-footer a:hover, .page-footer span:hover{
+    opacity: 0.7;
+}
